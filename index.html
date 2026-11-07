@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nome da Bruxa • Tarô, Astrologia, Ervas e Rituais Lunares</title>
+<meta name="description" content="Consultas de tarô, mapa astral, ervas e rituais lunares, online ou presencial. Agende sua primeira consulta.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="ramo" viewBox="0 0 80 200"><path d="M40 198C40 130 42 70 40 8" stroke="currentColor" stroke-width="2.5" fill="none"/><g fill="currentColor"><ellipse cx="22" cy="150" rx="19" ry="7" transform="rotate(-40 22 150)"/><ellipse cx="58" cy="124" rx="19" ry="7" transform="rotate(40 58 124)"/><ellipse cx="22" cy="98" rx="17" ry="6.5" transform="rotate(-40 22 98)"/><ellipse cx="58" cy="72" rx="16" ry="6" transform="rotate(40 58 72)"/><ellipse cx="25" cy="44" rx="13" ry="5.5" transform="rotate(-40 25 44)"/><ellipse cx="40" cy="12" rx="6" ry="12"/></g></symbol></svg>
+<div id="progress"></div>
+<div class="anuncio" id="anuncio"></div>
+<header class="header">
+  <a href="#inicio" class="logo">☾ Nome da Bruxa</a>
+  <nav class="nav">
+    <a href="#servicos">Serviços</a><a href="#pacotes">Pacotes</a><a href="#carta">Carta do dia</a><a href="#loja">Loja</a><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a>
+    <a href="#agendar" class="btn gold sm">Agendar</a>
+  </nav>
+  <div class="tools"><button id="tema" aria-label="Alternar tema">◐</button><button id="abrirCarrinho" aria-label="Cesto">🧺<b id="qtd">0</b></button><button class="menu-btn" aria-label="Menu">☰</button></div>
+</header>
+
+<main>
+<section id="inicio" class="hero dark">
+  <svg class="deco d1"><use href="#ramo"/></svg><svg class="deco d2"><use href="#ramo"/></svg>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <p class="kicker">Tarô • Astrologia • Ervas • Rituais lunares</p>
+      <h1>Clareza para o seu caminho, <em>no ritmo da natureza</em></h1>
+      <p class="lead">Consultas acolhedoras, online ou presencial, para você decidir com mais leveza, confiança e propósito.</p>
+      <div class="hero-btns"><a class="btn gold" href="#agendar">Agendar minha consulta</a><a class="btn ghost" href="#quiz">Qual consulta é a ideal?</a></div>
+      <ul class="trust"><li><b>4,9★</b>avaliação média</li><li><b><span data-n="1200">0</span>+</b>consultas feitas</li><li><b>100%</b>sigilo garantido</li></ul>
+    </div>
+    <div class="arch reveal"><svg><use href="#ramo"/></svg><small>Sua foto aqui</small><div class="moonbadge" id="lua"></div></div>
+  </div>
+</section>
+
+<div class="strip"><span>🔒 Atendimento sigiloso</span><span>💬 Primeira conversa sem compromisso</span><span>💳 Pix e cartão</span><span>🌿 Produtos naturais</span></div>
+
+<section id="quiz" class="section">
+  <p class="kicker c">Em dúvida por onde começar?</p><h2 class="title reveal">Descubra a consulta ideal para você</h2>
+  <div class="quiz reveal" id="quizbox"></div>
+</section>
+
+<section id="servicos" class="section tint">
+  <div class="wrap"><p class="kicker c">Atendimentos</p><h2 class="title reveal">Meus serviços</h2>
+  <p class="subtitle">Cada sessão é feita com escuta, cuidado e respeito ao seu momento.</p>
+  <div class="grid" id="svc"></div></div>
+</section>
+
+<section id="pacotes" class="section">
+  <p class="kicker c">Valores transparentes</p><h2 class="title reveal">Escolha como caminhar comigo</h2>
+  <div class="plans">
+    <article class="plan reveal"><h3>Consulta Avulsa</h3><p class="price">R$ 120</p><ul><li>1 sessão de 45 min</li><li>Tarô, astral ou ervas</li><li>Resumo por escrito</li></ul><a href="#agendar" class="btn moss" data-s="Consulta Avulsa">Quero esta</a></article>
+    <article class="plan hot reveal"><span class="tag">Mais escolhido</span><h3>Jornada Lunar</h3><p class="price">R$ 310 <s>R$ 360</s></p><ul><li>3 encontros ao longo de 1 ciclo lunar</li><li>Ritual personalizado de bônus</li><li>Suporte por WhatsApp</li></ul><a href="#agendar" class="btn gold" data-s="Jornada Lunar (3 encontros)">Quero esta</a></article>
+    <article class="plan reveal"><h3>Círculo Mensal</h3><p class="price">R$ 89<small>/mês</small></p><ul><li>Lua cheia e nova em grupo</li><li>Meditação e tarô coletivo</li><li>Material do mês</li></ul><a href="#agendar" class="btn moss" data-s="Círculo Mensal">Quero esta</a></article>
+  </div>
+</section>
+
+<section class="section tint">
+  <div class="wrap"><h2 class="title reveal">Como funciona</h2>
+  <div class="steps">
+    <div class="reveal"><i>1</i><h3>Escolha e agende</h3><p>Selecione serviço, data e horário em poucos cliques.</p></div>
+    <div class="reveal"><i>2</i><h3>Confirme pelo WhatsApp</h3><p>Combinamos o pagamento e enviamos o link ou endereço.</p></div>
+    <div class="reveal"><i>3</i><h3>Receba sua orientação</h3><p>Sessão acolhedora e um resumo para consultar sempre que quiser.</p></div>
+  </div></div>
+</section>
+
+<section id="carta" class="section dark tarot">
+  <p class="kicker c">Um presente para hoje</p><h2 class="title reveal">Sua carta do dia</h2>
+  <p class="subtitle">Respire fundo, foque em uma intenção e toque na carta.</p>
+  <button id="carta-btn" class="tcard" aria-label="Revelar carta"><div class="tback"><svg><use href="#ramo"/></svg></div><div class="tfront"><span id="c-emoji"></span><h3 id="c-nome"></h3><p id="c-msg"></p></div></button>
+  <p class="note">Uma carta por dia. Para reflexão e entretenimento.</p>
+</section>
+
+<section id="loja" class="section">
+  <p class="kicker c">Feito à mão</p><h2 class="title reveal">Lojinha artesanal</h2>
+  <p class="subtitle">Ervas, velas e cristais selecionados com carinho.</p>
+  <div class="chips" id="filtros"></div><div class="grid" id="produtos"></div>
+</section>
+
+<section id="sobre" class="section tint">
+  <div class="wrap about">
+    <div class="arch sm reveal"><svg><use href="#ramo"/></svg><small>Sua foto aqui</small></div>
+    <div class="reveal">
+      <p class="kicker">Quem vai te atender</p><h2 class="title left">Olá, eu sou a Nome da Bruxa</h2>
+      <p>Há mais de 8 anos caminho junto à natureza, estudando tarô, astrologia, ervas e os ciclos da lua. Meu propósito é ajudar você a reencontrar o seu próprio poder, com acolhimento e sem julgamentos.</p>
+      <div class="badges"><span>🔮 Tarologa certificada</span><span>🌿 Herbalista</span><span>✨ Astróloga</span><span>🎓 +300h de estudo</span></div>
+      <a href="#agendar" class="btn moss">Conversar comigo</a>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos" class="section">
+  <p class="kicker c">Prova social</p><h2 class="title reveal">Quem já passou por aqui</h2>
+  <div class="grid">
+    <blockquote class="card reveal"><div class="stars">★★★★★</div>“Saí da consulta leve e com muita clareza. Atendimento lindo e acolhedor!”<cite>Mariana Souza <small>• Leitura de Tarô</small></cite></blockquote>
+    <blockquote class="card reveal"><div class="stars">★★★★★</div>“Os banhos de ervas e o ritual da lua mudaram minha rotina. Recomendo demais.”<cite>Camila Ferreira <small>• Rituais Lunares</small></cite></blockquote>
+    <blockquote class="card reveal"><div class="stars">★★★★★</div>“Mapa astral certeiro e sensível. Me senti muito bem cuidada do começo ao fim.”<cite>Juliana Prado <small>• Mapa Astral</small></cite></blockquote>
+  </div>
+</section>
+
+<section id="agendar" class="section dark contact">
+  <div class="wrap split">
+    <div class="reveal"><p class="kicker">Agendamento</p><h2 class="title left">Reserve seu horário</h2>
+      <p class="lead">Escolha serviço, data e horário. Eu confirmo tudo pelo WhatsApp em até 24 horas.</p>
+      <ul class="ticks"><li>Primeira consulta com 15% off (código LUA15)</li><li>Remarcação gratuita com 24h de antecedência</li><li>Sessão online ou presencial</li></ul></div>
+    <form id="form" class="form reveal">
+      <input name="nome" placeholder="Seu nome" required>
+      <select name="servico" required><option value="">Escolha um serviço ou pacote</option></select>
+      <select name="modo"><option>Online</option><option>Presencial</option></select>
+      <input type="date" name="data" required>
+      <div class="slots" id="slots"></div>
+      <textarea name="mensagem" rows="3" placeholder="Quer me contar algo? (opcional)"></textarea>
+      <button class="btn gold" type="submit">Solicitar agendamento</button>
+      <p id="msg" class="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <p class="kicker c">Tire suas dúvidas</p><h2 class="title reveal">Perguntas frequentes</h2>
+  <div class="faq reveal">
+    <details><summary>Como funciona a consulta online?</summary><p>Por videochamada. Você recebe o link após a confirmação do horário.</p></details>
+    <details><summary>Preciso levar algo?</summary><p>Apenas uma intenção clara. Para mapa astral, informe data, hora e local de nascimento.</p></details>
+    <details><summary>Quais as formas de pagamento?</summary><p>Pix, cartão e transferência. Os detalhes seguem na confirmação.</p></details>
+    <details><summary>Posso remarcar?</summary><p>Sim, com até 24 horas de antecedência, sem custo.</p></details>
+    <details><summary>A consulta substitui acompanhamento médico ou psicológico?</summary><p>Não. Os atendimentos são de orientação e autoconhecimento e não substituem cuidados profissionais de saúde.</p></details>
+  </div>
+  <form id="news" class="news reveal"><div><h3>Calendário lunar grátis 🌙</h3><p>Receba as fases da lua e dicas de ervas por e-mail.</p></div><input type="email" placeholder="Seu melhor e-mail" required><button class="btn moss">Quero receber</button></form>
+</section>
+</main>
+
+<footer class="footer dark">
+  <div class="wrap fgrid">
+    <div><p class="logo">☾ Nome da Bruxa</p><p>Magia gentil, ervas e autoconhecimento.</p></div>
+    <div><h4>Navegue</h4><a href="#servicos">Serviços</a><a href="#pacotes">Pacotes</a><a href="#loja">Loja</a><a href="#faq">Dúvidas</a></div>
+    <div><h4>Contato</h4><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">email@exemplo.com</a></div>
+  </div>
+  <small>© <span id="ano"></span> Nome da Bruxa. Todos os direitos reservados.</small>
+</footer>
+
+<aside id="drawer" class="drawer" aria-label="Cesto">
+  <div class="dhead"><h3>Seu cesto</h3><button id="fechar" aria-label="Fechar">✕</button></div>
+  <div id="itens"></div>
+  <div class="dfoot"><p>Total: <b id="total">R$ 0,00</b></p><button class="btn gold" id="finalizar">Finalizar pelo WhatsApp</button><button class="link" id="limpar">Esvaziar cesto</button></div>
+</aside>
+<div id="veu" class="veu"></div>
+<a id="fab" class="fab" href="#agendar" aria-label="Agendar">💬 Agendar</a>
+<button id="topo" aria-label="Voltar ao topo">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
